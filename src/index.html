@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title></title>
+</head>
+<body>
+	
+	<div>
+	  <img src="../img/TrasparentLogo.png" alt="logo">
+	</div> 
+
+	<div class = "container">
+
+	    <div class ="title">
+			  <h2>SealPass Generator 🛡️</h2>
+	    </div>
+
+		<div class="result-container">
+			<span id="result"></span>
+			<button class="btn" id="clipboard">
+				🧷
+			</button>
+		</div>
+
+		<div class="options">
+			<div class="center">
+				<label>Lowercase Letters</label>
+				<input type="checkbox" class="a" id="lowercase" checked>
+			</div>
+			<div class="center">
+				<label>Uppercase Letters</label>
+				<input type="checkbox" class="b" id="uppercase" checked>
+			</div>
+			<div class="center">
+				<label>Digits</label>
+				<input type="checkbox" class="c" id="numbers" checked>
+			</div>
+			<div class="center">
+				<label>Symbols</label> 
+				<input type="checkbox" class="d" id="symbols" checked>
+			</div>
+		</div>
+		
+		<div class="range-div">
+			<span class="range-val" id="rng">8</span>
+			<input type="range" class="range" id="length" value="8" min="4" max="32" 
+			 	onmousemove="rangeSlider(this.value)"
+			 	onchange="rangeSlider(this.value)"
+			>
+		</div>
+    
+	    <div class ="gen">
+	      <button class="generation" id="generate">
+	        Generate 🔑
+	      </button>
+	    </div>
+
+	</div>
+
+	<footer>
+		<p>
+			All rigths reserved SealPass ©- Get source code here
+			<a target="_blank" href="https://github.com/ChahiAladeen/Password-Generator">here</a>.
+		</p>
+	</footer>
+
+	<script type="text/javascript" src="../js/script.js"></script>
+
+</body>
+</html>

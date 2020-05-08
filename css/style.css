@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*Container*/
+
+.container {
+  margin-left: 20%;
+    margin-bottom: 2%;
+	background-color: white;
+  border-radius : 8px;
+	box-shadow: 2px 1px 8px black;
+	padding: 20px;
+  height: 470px;
+	width: 350px;
+	max-width: 100%;
+}
+
+.center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5% 3.5%;
+}
+
+/*Title*/
+
+.title {
+	margin-top: 1px;
+  margin-left: 20px;
+	text-align: center;
+}
+
+/*Result container*/
+
+.result-container {
+	  background: linear-gradient(to left, #fe8c00, #f83600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	border-radius: 5px;
+	box-shadow: 0 0 0 2px #000, 
+	0 0 0 1px #000,   
+	inset 0 0 5px rgba(0,0,0,.2);
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	letter-spacing: 1px;
+	padding-right: 4px; 
+  margin-left: 5%;
+  margin-top: 15%;
+  margin-bottom: 14%;
+	height: 12%;
+	width: 80%;
+}
+
+.result-container #result {
+  overflow-wrap: anywhere;
+	max-width: calc(100% - 40px);
+  font-size: 16px;
+  margin-left : 4%;
+  color: white;
+}
+
+.result-container .btn {
+	font-size: 20px;
+	position: absolute;
+	top: 18%;
+	right: -15%;
+  box-shadow: 100%;
+}
+
+.btn {
+  background-color: Transparent;
+	border: none;
+  outline:none;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+/*Checkboxs*/
+
+input[type ="checkbox"]{
+	width: 50px;
+	height: 15px;
+	-webkit-appearance: none;
+	background: linear-gradient(0deg, #333, #000);
+	border-radius: 20px;
+	box-shadow: 0 0 0 2px #000, 
+	0 0 0 4px #000,   
+	inset 0 0 15px rgba(0,0,0,.2);
+	cursor: pointer;
+	outline: none;
+}
+
+input[type ="checkbox"]:after{
+	left: 65px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	transition: .5s;
+}
+
+/*First checkbox*/
+
+.a:checked{
+  background: linear-gradient(to left, #ee0979, #ff6a00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*Second checkbox*/
+
+.b:checked{
+	  background: linear-gradient(to left, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*Third Checkbox*/
+
+.c:checked{
+ 	background: linear-gradient(to left, #f7971e, #ffd200);
+ }
+
+/*Quarth Checkbox*/
+
+.d:checked{
+	background: linear-gradient(to left, #43cea2, #185a9d);
+}
+
+/*Range sroll*/
+
+.range-div{
+	position: relative;
+	margin-top: 10%;
+  padding-left: 10%;
+}
+
+.range-val{
+    position: absolute;
+    top: 2px;
+    right: 10%;
+    padding: 2px;
+    width: 5px;
+}
+
+.range-val::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    left: -5px;
+    width: 10px;
+    height: 10px;
+}
+
+.range{
+    width: 250px;
+    height: 2px;
+    background: #111;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 2.4px black;
+    background: yellow;
+    box-shadow: 0 0 15px 5px #e6147d94;
+    cursor: pointer;
+}
+
+/*Generation button*/
+
+.gen{
+  margin-top: 3%;
+  margin-left: 35%;
+}
+
+.gen .generation{
+  background: linear-gradient(to bottom, #fe8c00, #f83600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 10px;
+	box-shadow: 0 0 0 1.5px #000, 
+	0 0 0 1px #000;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 17px;
+	position: relative;
+	margin-top: 6%;
+	border: none;
+  outline:none;
+	cursor: pointer;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
