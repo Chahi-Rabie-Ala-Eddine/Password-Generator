@@ -2,7 +2,7 @@
 
 **Version 1.0.0**
 
-This generator makes it possible to generate secure pseudo-random passwords of semi-random size. Written in javascript from libraries recognized in the world of cybersecurity.
+This generator is used to generate secure pseudo-random passwords of semi-random size. Written in javascript from libraries recognized in the world of cybersecurity
 
 # Use 
 
